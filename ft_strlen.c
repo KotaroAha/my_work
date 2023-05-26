@@ -6,11 +6,13 @@
 /*   By: kinami <kinami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:33:25 by kinami            #+#    #+#             */
-/*   Updated: 2023/05/16 17:37:53 by kinami           ###   ########.fr       */
+/*   Updated: 2023/05/25 17:55:42 by kinami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
