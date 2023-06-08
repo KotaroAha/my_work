@@ -6,7 +6,7 @@
 /*   By: kinami <kinami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 18:47:39 by kinami            #+#    #+#             */
-/*   Updated: 2023/05/26 19:15:51 by kinami           ###   ########.fr       */
+/*   Updated: 2023/06/08 19:59:44 by kinami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	*ft_memchr(const void *d, int c, size_t len)
 {
-	if (!d)
-		return (NULL);
 	size_t	i;
 
 	i = 0;

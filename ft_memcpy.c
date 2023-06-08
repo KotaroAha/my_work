@@ -6,7 +6,7 @@
 /*   By: kinami <kinami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 15:11:52 by kinami            #+#    #+#             */
-/*   Updated: 2023/05/25 15:32:31 by kinami           ###   ########.fr       */
+/*   Updated: 2023/06/08 19:58:14 by kinami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
-	char	*d = dest;
-	const char	*s = src;
 	size_t	i;
 
 	i = 0;
-	while(i < len)
+	if (dest == src)
+		return (dest);
+	while (i < len)
 	{
-		d[i] = s[i];
+		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 		i++;
 	}
 	return (dest);

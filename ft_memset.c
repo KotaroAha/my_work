@@ -6,7 +6,7 @@
 /*   By: kinami <kinami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:46:25 by kinami            #+#    #+#             */
-/*   Updated: 2023/05/25 14:42:30 by kinami           ###   ########.fr       */
+/*   Updated: 2023/06/08 19:42:55 by kinami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ void	*ft_memset(void *ptr, int val, size_t len)
 {
 	size_t	i;
 	
-	if(!ptr)
+/* 	if(!ptr)
 		return (NULL);
-
+ */
 	i = 0;
 	while(i < len)
 	{
