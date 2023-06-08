@@ -6,7 +6,7 @@
 /*   By: kinami <kinami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 16:39:56 by kinami            #+#    #+#             */
-/*   Updated: 2023/06/02 15:09:19 by kinami           ###   ########.fr       */
+/*   Updated: 2023/06/08 16:01:05 by kinami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
+#include <unistd.h>
 
 //part1
 int	ft_isalpha(int c);
