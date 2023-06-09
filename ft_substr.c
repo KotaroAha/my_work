@@ -6,7 +6,7 @@
 /*   By: kinami <kinami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 14:10:17 by kinami            #+#    #+#             */
-/*   Updated: 2023/06/08 18:39:36 by kinami           ###   ########.fr       */
+/*   Updated: 2023/06/09 15:14:29 by kinami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,14 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	size_t	s_len;
 	char	*str;
 
+	if (!s)
+		return (NULL);
 	s_len = ft_strlen(s);
 	if (len > s_len)
 		len = s_len;
 	str = (char*)malloc(sizeof(char) * (len + 1));
 	if (!str)
-		return (NULL);
+		return (0);
 	i = 0;
 	j = 0;
 	while (s[i])

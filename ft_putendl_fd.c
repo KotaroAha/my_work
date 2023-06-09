@@ -6,7 +6,7 @@
 /*   By: kinami <kinami@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/08 15:22:01 by kinami            #+#    #+#             */
-/*   Updated: 2023/06/08 15:23:41 by kinami           ###   ########.fr       */
+/*   Updated: 2023/06/09 16:06:47 by kinami           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (fd < 0)
+	if (fd < 0 || s == NULL)
 		return ;
 	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
